@@ -45,6 +45,7 @@
 
     <TextView
         android:id="@+id/text_service"
+        style="@style/Widget.TipTime.TextView"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_width="wrap_content"
@@ -64,18 +65,21 @@
 
         <RadioButton
             android:id="@+id/option_twenty_percent"
+            style="@style/Widget.TipTime.CompoundButton.RadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/amazing_service" />
 
         <RadioButton
             android:id="@+id/option_eighteen_percent"
+            style="@style/Widget.TipTime.CompoundButton.RadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/good_service" />
 
         <RadioButton
             android:id="@+id/option_fifteen_percent"
+            style="@style/Widget.TipTime.CompoundButton.RadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/okay_service" />
@@ -92,6 +96,7 @@
 
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/round_up_switch"
+        style="@style/Widget.TipTime.CompoundButton.Switch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:checked="true"
@@ -107,15 +112,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calculate"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/round_up_switch" />
 
     <TextView
         android:id="@+id/tip_result"
+        style="@style/Widget.TipTime.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tip_amount"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_calculate" />
 
